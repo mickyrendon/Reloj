@@ -2,30 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: bolder 2.5rem monospace;
+    font: bolder 14vh monospace;
     text-align: center;
 }
-body, main, .data-container{
+body, main, .data-container, .time-container{
     display: flex;
     justify-content: center;
 }
 body{
-    height: 600px;
+    height: 1200px;
     align-items: center;
     color: white;
     text-shadow:0 0 2px darkred;
 }
 main{
-    width: 80%;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     background-image: url(../assets/cool-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .data-container{
     width: 100%;
+    height: 50%;
     flex-direction: column;
+}
+.time-container{
+    width: 100%;
+}
+h1{
+    height: 100%;
+}
+.seconds{
+    display: none;
 }
 .text{
     width: 100%;
-    font-size: 1rem;
+    font-size: 4vh;
 
+}
+
+
+
+/* mediaqueries despues  */
+@media (min-width: 530px) {
+    .time-container{
+        justify-content: center;
+    }
+    .seconds{
+        display: flex;
+    }
 }
