@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: bolder 2.5rem monospace;
+    text-align: center;
+}
+body, main, .data-container{
+    display: flex;
+    justify-content: center;
+}
+body{
+    height: 600px;
+    align-items: center;
+    color: white;
+    text-shadow:0 0 2px darkred;
+}
+main{
+    width: 80%;
+    height: 400px;
+    background-image: url(../assets/cool-background.png);
+}
+.data-container{
+    width: 100%;
+    flex-direction: column;
+}
+.text{
+    width: 100%;
+    font-size: 1rem;
+
+}
