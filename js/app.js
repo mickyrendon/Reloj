@@ -6,7 +6,7 @@ const time = ()=>{
     let seconds = dobleDigito(date.getSeconds());
 
     fullDate(date);
-
+    toggleStyle();
     return  document.getElementById('hour').innerHTML = `${hour}`,
             document.getElementById('minutes').innerHTML = `:${minutes}`,
             document.getElementById('seconds').innerHTML = `:${seconds}`;
@@ -32,7 +32,26 @@ const fullDate = (date) =>{
     document.getElementById('text').innerHTML = `${dayMonthYear}`;
 }
 
-
+// funcion toggle para el border del contenedor
+function toggleStyle(){
+    let borderC  = document.getElementById('data-container');
+        borderC.classList.toggle('data-border');
+}
 
 // no necesitamos del onload para que se actualize cada segundo
+
 setInterval(time, 1000);
+
+
+//codigo para el efecto de segundo al borde del contenedor/ 
+// const evento = () =>{
+//     let borderC  = document.getElementById('data-container');
+//     borderC.style.border = '';
+// }
+// const eventoOff = () =>{
+//     let border  = document.getElementById('data-container');
+
+//     border.style.border = 'none';
+// }
+// setInterval(evento, 500);
+// setInterval(eventoOff, 1000);
