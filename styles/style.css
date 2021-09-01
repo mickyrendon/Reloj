@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: bolder 14vh monospace;
+    font: bolder 2.5rem monospace;
     text-align: center;
 }
 body, main, .data-container, .time-container{
@@ -31,7 +31,7 @@ main{
     border-radius: 20px;
 }
 .data-border{
-    border: 5px solid rgba(40, 240, 5, 0.35);
+    border: 5px solid#fc876a;
 }
 .time-container{
     width: 100%;
