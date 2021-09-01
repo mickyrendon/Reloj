@@ -13,7 +13,7 @@ body{
     height: 1200px;
     align-items: center;
     color: white;
-    text-shadow:0 0 2px darkred;
+    text-shadow:0 0 2px #fa643e;
 }
 main{
     width: 100%;
@@ -23,11 +23,11 @@ main{
     background-repeat: no-repeat;
 }
 .data-container{
+    padding: 20px;
     margin: 100px;
     width: 800px;
     height: 20%;
     flex-direction: column;
-    border: 5px solid transparent;
     border-radius: 20px;
 }
 .data-border{
@@ -36,18 +36,12 @@ main{
 .time-container{
     width: 100%;
 }
-h1{
-    height: 100%;
-}
 .seconds{
     display: none;
 }
 .text{
-    width: 100%;
-    font-size: 4vh;
-
+    font-size: 0.8rem;
 }
-
 
 
 /* mediaqueries despues  */
